@@ -1,0 +1,30 @@
+PS C:\デスクトップ\kadai_005\html> cd C:\デスクトップ\TEST\git_challenge
+PS C:\デスクトップ\TEST\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\デスクトップ\TEST\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\デスクトップ\TEST\git_challenge> git init
+Initialized empty Git repository in C:/デスクトップ/TEST/git_challenge/.git/
+PS C:\デスクトップ\TEST\git_challenge> git add .
+PS C:\デスクトップ\TEST\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\デスクトップ\TEST\git_challenge> git commit -m hello_world.txt変更しました。
+[main (root-commit) 3a52137] hello_world.txt変更しました。
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\デスクトップ\TEST\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\デスクトップ\TEST\git_challenge> git commit --amend
+[main 6560ed6] hello_world.txtを追加
+ Date: Tue Jul 9 23:19:46 2024 +0900
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\デスクトップ\TEST\git_challenge> 
+PS C:\デスクトップ\TEST\git_challenge> git log --oneline
+6560ed6 (HEAD -> main) hello_world.txtを追加
